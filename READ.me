@@ -4,3 +4,14 @@ Instalación de VirtualBox para el sistema operativo del alumno, instalación co
 https://www.virtualbox.org/
 Instalación de Vagrant para el sistema operativo del alumno, instalación con valores por defecto desde:
 https://www.vagrantup.com/
+
+
+Dejamos en una carpeta el fichero Vagranfile, y en una línea de comandos en la misma carpeta:
+
+vagrant up 
+
+#### El primer arranque tarda en descargar la máquina, tarda en configurar la interfaz de usuario y se quedará en el punto que dice
+####      default: Setting up gdm3 (3.36.3-0ubuntu0.20.04.4) ...
+#### lo paramos con Control+C, volvemos a la línea de comandos con un Enter. Paramos la máquina
+####   Vagrant halt
+#### En el siguiente arranque con "vagrant up" llegaremos a la interfaz de usuario: PASSWORD: "vagrant"
