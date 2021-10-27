@@ -1,0 +1,27 @@
+# 26-10-2021
+----------
+
+SOFTWARE
+
+Instalación de VirtualBox para el sistema operativo del alumno, instalación con valores por defecto:
+https://www.virtualbox.org/
+Instalación de Vagrant para el sistema operativo del alumno, instalación con valores por defecto desde:
+https://www.vagrantup.com/
+
+27-10-2021
+----------
+
+La máquina virtual y las dependencias pesan 500M y 600M, por lo que sería aconsejable que para mañana hayais realizado este proceso
+
+Descargamos y dejamos en una carpeta el fichero Vagranfile, y en una línea de comandos en la misma carpeta:
+
+`vagrant up`
+
+El primer arranque tarda en descargar la máquina y también tarda en configurar la interfaz de usuario y se quedará bloqueado en el punto que dice:
+     *default: Setting up gdm3 (3.36.3-0ubuntu0.20.04.4) ...*
+lo paramos con Control+C, volvemos a la línea de comandos con un Enter.
+Paramos la máquina con `Vagrant halt`
+
+En el siguiente arranque con `vagrant up` llegaremos a la interfaz de usuario: *PASSWORD: "vagrant"*
+Recordamos, aunque la interfaz gráfica en la máquina virtual tiene la opción de apagar, la forma de pararlo siempre es mediante `vagrant halt`
+desde la carpeta correspondiente
