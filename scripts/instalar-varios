@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo sed -i 's/allowed_users=.*$/allowed_users=anybody/' /etc/X11/Xwrapper.config
+sudo usermod -aG vboxsf $USER
